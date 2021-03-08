@@ -1,0 +1,49 @@
+[[package]]
+name = "awscrt"
+version = "0.10.8"
+description = "A common runtime for AWS Python projects"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.source]
+type = "url"
+url = "https://www.piwheels.org/simple/awscrt/awscrt-0.10.8-cp37-cp37m-linux_armv6l.whl"
+
+[[package]]
+name = "awsiotsdk"
+version = "1.5.7"
+description = "AWS IoT SDK based on the AWS Common Runtime"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+awscrt = "0.10.8"
+
+[[package]]
+name = "pydash"
+version = "4.9.3"
+description = "The kitchen sink of Python utility libraries for doing \"stuff\" in a functional way. Based on the Lo-Dash Javascript library."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+dev = ["coverage", "docformatter", "flake8", "invoke", "mock", "pylint", "pytest", "pytest-cov", "pytest-flake8", "pytest-pylint", "sphinx", "sphinx-rtd-theme", "tox", "twine", "wheel", "black", "flake8-black", "flake8-bugbear", "flake8-isort", "isort"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.7"
+content-hash = "b37ebc1d9681ed05c7fbe08c80775732e66f5ef86061c67c96b256b82c0ddf59"
+
+[metadata.files]
+awscrt = []
+awsiotsdk = [
+    {file = "awsiotsdk-1.5.7-py3-none-any.whl", hash = "sha256:d2b74c5ee7d398aa8b0fc16a63e4d4550497bbd6bc05ef74417fd4737cbcca06"},
+    {file = "awsiotsdk-1.5.7.tar.gz", hash = "sha256:fe9a699cecfe41ee8993c2f3fa9dfa5f0cc89e3976fafac85a8f9d7c23a3890a"},
+]
+pydash = [
+    {file = "pydash-4.9.3-py2.py3-none-any.whl", hash = "sha256:7851a2d749e70c02585ae4803b01c5e0f47b7ec9df9b84ccb16aac38cad2fdd2"},
+    {file = "pydash-4.9.3.tar.gz", hash = "sha256:d709e57b537b1aaf118f188da3ec6242a665090ecd7839b66f857ee3dc2bb006"},
+]
